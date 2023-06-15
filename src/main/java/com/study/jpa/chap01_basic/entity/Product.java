@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 @Table(name = "tbl_product")
 public class Product {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "prod_id")

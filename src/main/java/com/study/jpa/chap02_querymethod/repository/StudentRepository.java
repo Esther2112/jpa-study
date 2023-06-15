@@ -23,7 +23,7 @@ public interface StudentRepository extends JpaRepository<Student, String> {
     // where 별칭.field명 = ?
 
     //native-sql : select * from tbl_student where stu_name = ?
-    // spql : select st from Student as st where st.name = ?
+    // jpql : select st from Student as st where st.name = ?
 
 //    @Query(value = "select * from tbl_student where city = ?1", nativeQuery = true)
     @Query("select s from Student s where s.city = ?1")
